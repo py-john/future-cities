@@ -1,0 +1,33 @@
+.profile {
+    background-color: $color-white;
+    padding: 10rem;
+    border-radius: 5px;
+    border-right: 1px solid #3c3c3c;
+    border-left: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+
+    &__section {
+        margin-bottom: 8rem;
+
+        .paragraph {
+            font-weight: 300;
+            font-size: 2rem;
+
+            &--medium {
+                font-size: 1.8rem;
+            }
+
+            &__list {
+                font-size: 1.7em;
+                font-weight: 300;
+                margin-top: -1rem;
+
+                padding-left: 10rem;
+
+                &--item {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -7,16 +7,14 @@
 @import "base/animations";
 @import "base/utilities";
 
-@import "layout/navbar";
+@import "layout/navigation";
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
 
 @import "components/button";
 @import "components/composition";
-@import "components/feature-box";
-@import "components/story";
-@import "components/bg-video";
-@import "components/form";
 
 @import "pages/home";
+@import "pages/profile";
+@import "pages/principles";

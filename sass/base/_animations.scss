@@ -41,3 +41,31 @@
         transform: translate(0);
     }
 }
+
+@keyframes submenu {
+    0% {
+        opacity: 0;
+        transform: rotateY(-90deg) translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+
+@keyframes pageHeader {
+    0% {
+        opacity: 0;
+        transform: translateX(18rem);
+    }
+
+    80% {
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: .7;
+        transform: translate(0);
+    }
+}

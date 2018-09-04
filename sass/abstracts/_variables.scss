@@ -1,28 +1,27 @@
 // COLORS
-$color-primary: #333;
+$color-primary: #1a1a1a;
 $color-primary-light: #555;
 $color-primary-dark: #222;
 
 $color-secondary-light: #cf6766;
-// $color-secondary-dark: #;
-
-// $color-tertiary-light: #;
-// $color-tertiary-dark: #;
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
 $color-grey-dark-1: #999;
-$color-grey-dark-2: #555;
+$color-grey-dark-2: #494949;
 $color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
 
 // FONT
-$default-font-size: 1.6rem;
+$default-font-size: 1.4rem;
+
+// PADDING
+$body-padding: 1.75%;
 
 // GRID
 $grid-width: 114rem;
-$gutter-vertical: 8rem;
+$gutter-vertical: 4rem;
 $gutter-horizontal: 6rem;
