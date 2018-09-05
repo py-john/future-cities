@@ -18,6 +18,10 @@
 
     .col-1-of-1 {
         max-width: 75%;
+
+        @include respond(phone) {
+            max-width: 88%;
+        }
     }
 
     .col-1-of-2 {

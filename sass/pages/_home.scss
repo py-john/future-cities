@@ -1,7 +1,10 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 5rem 0 30rem 0;
-    // margin-top: -20vh;
+    border-radius: 0 0 4px 4px;
+    border-left: 1px solid #3c3c3c;
+    border-right: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
 }
 
 

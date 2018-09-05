@@ -12,7 +12,7 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-    margin-bottom: 8rem;
+    margin: 5rem 0;
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -26,7 +26,7 @@ body {
                  1px 10px 22px rgba(0, 0, 0, .1);
 
     @include respond(phone) {
-        margin-bottom: 15rem;
+        margin-bottom: 7rem;
     }
 
     &--main {
@@ -76,17 +76,15 @@ body {
 
     display: block;
     letter-spacing: 3.2rem;
-    text-indent: 3.2rem;
-    animation: pageHeader .7s ease-out;
+    animation: pageHeader .8s ease-out;
 
     @include respond(tab-port) {
         margin-bottom: 6rem;
     }
 
     @include respond(phone) {
-        font-size: 3.3rem;
+        font-size: 3.5rem;
         letter-spacing: 2.1rem;
-        text-indent: 2.1rem;
         margin-bottom: 4rem;
     }
 
@@ -98,27 +96,36 @@ body {
     display: inline-block;
     color: $color-primary-light;
     letter-spacing: .2rem;
-    text-shadow: .2rem .4rem 1rem rgba($color-black, .2);
+    text-shadow: .2rem .4rem 1rem rgba($color-black, .25);
 
     @include respond(phone) {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 }
 
 .heading-quaternary {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 4rem;
     letter-spacing: .15rem;
     color: $color-primary-light;
-    text-shadow: .2rem .4rem 1rem rgba($color-black, .2);
+    text-shadow: .2rem .4rem 1rem rgba($color-black, .25);
+
+    @include respond(phone) {
+        font-size: 2.4rem;
+    }
 }
 
 .heading-quinary {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: .15rem;
     color: $color-primary-light;
+    margin-top: 6rem;
+
+    @include respond(phone) {
+        font-size: 2.3rem;
+    }
 }
 
 .heading-senary {

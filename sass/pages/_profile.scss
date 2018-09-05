@@ -15,29 +15,38 @@
     }
 
     @include respond(phone) {
-        padding: 10rem 4rem;
+        padding: 7rem 1.5rem 3rem 3rem;
     }
 
     &__section {
-        margin-bottom: 8rem;
+        margin-bottom: 6rem;
 
         .paragraph {
             font-weight: 300;
             font-size: 2rem;
+            margin-left: 2rem;
 
-            &--medium {
-                font-size: 1.8rem;
+            @include respond(phone) {
+                margin-left: 1.3rem;
             }
 
             &__list {
-                font-size: 1.7em;
+                font-size: 1.8em;
                 font-weight: 300;
                 margin-top: -1rem;
+                padding-left: 8rem;
 
-                padding-left: 10rem;
+                @include respond(phone) {
+                    font-size: 1.7rem;
+                    padding-left: 4rem;
+                }
 
                 &--item {
                     padding-bottom: 1rem;
+
+                    @include respond(phone) {
+                        padding-bottom: .5rem;
+                    }
                 }
             }
         }

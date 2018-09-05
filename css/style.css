@@ -36,7 +36,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 8rem;
+  margin: 5rem 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-size: 7.5rem;
@@ -47,7 +47,7 @@ body {
   text-shadow: -3px 4px 3px rgba(0, 0, 0, 0.5), 3px 4px 3px rgba(0, 0, 0, 0.2), 1px 10px 22px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      margin-bottom: 15rem; } }
+      margin-bottom: 7rem; } }
   .heading-primary--main {
     display: block;
     letter-spacing: 3.5rem;
@@ -84,16 +84,14 @@ body {
   text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.5), 0px 6px 10px rgba(0, 0, 0, 0.3), 2px 8px 13px rgba(0, 0, 0, 0.2);
   display: block;
   letter-spacing: 3.2rem;
-  text-indent: 3.2rem;
-  animation: pageHeader .7s ease-out; }
+  animation: pageHeader .8s ease-out; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       margin-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 3.3rem;
+      font-size: 3.5rem;
       letter-spacing: 2.1rem;
-      text-indent: 2.1rem;
       margin-bottom: 4rem; } }
 
 .heading-tertiary {
@@ -102,24 +100,31 @@ body {
   display: inline-block;
   color: #555;
   letter-spacing: .2rem;
-  text-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2); }
+  text-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
-      font-size: 2.3rem; } }
+      font-size: 2.5rem; } }
 
 .heading-quaternary {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 4rem;
   letter-spacing: .15rem;
   color: #555;
-  text-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2); }
+  text-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.25); }
+  @media only screen and (max-width: 37.5em) {
+    .heading-quaternary {
+      font-size: 2.4rem; } }
 
 .heading-quinary {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: .15rem;
-  color: #555; }
+  color: #555;
+  margin-top: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-quinary {
+      font-size: 2.3rem; } }
 
 .heading-senary {
   font-size: 1.7rem;
@@ -256,29 +261,30 @@ body {
         border-radius: 0 4px 0 0; }
       .navigation__item--sub-2:last-child {
         border-radius: 0 0 4px 4px; }
-    .navigation__item:hover .navigation__item--sub {
-      display: block; }
-    .navigation__item:hover {
-      background-color: rgba(73, 73, 73, 0.9);
-      border-radius: 4px 4px 0 0; }
-      .navigation__item:hover > a:hover {
-        color: #cf6766; }
-      .navigation__item:hover .navigation__list--sub {
-        perspective: 1000px; }
-        .navigation__item:hover .navigation__list--sub li {
-          opacity: 0; }
-          .navigation__item:hover .navigation__list--sub li:nth-child(1) {
-            animation-name: submenu;
-            animation-duration: 0.3s;
-            animation-delay: 0s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards; }
-          .navigation__item:hover .navigation__list--sub li:nth-child(2) {
-            animation-name: submenu;
-            animation-duration: 0.6s;
-            animation-delay: 0.1s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards; }
+    @media (hover: hover) {
+      .navigation__item:hover {
+        background-color: rgba(73, 73, 73, 0.9);
+        border-radius: 4px 4px 0 0; }
+        .navigation__item:hover .navigation__item--sub {
+          display: block; }
+        .navigation__item:hover > a:hover {
+          color: #cf6766; }
+        .navigation__item:hover .navigation__list--sub {
+          perspective: 1000px; }
+          .navigation__item:hover .navigation__list--sub li {
+            opacity: 0; }
+            .navigation__item:hover .navigation__list--sub li:nth-child(1) {
+              animation-name: submenu;
+              animation-duration: 0.3s;
+              animation-delay: 0s;
+              animation-timing-function: ease-in-out;
+              animation-fill-mode: forwards; }
+            .navigation__item:hover .navigation__list--sub li:nth-child(2) {
+              animation-name: submenu;
+              animation-duration: 0.6s;
+              animation-delay: 0.1s;
+              animation-timing-function: ease-in-out;
+              animation-fill-mode: forwards; } }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
     color: #eee;
@@ -286,7 +292,7 @@ body {
 
 .header {
   height: 100vh;
-  padding: 0 3rem;
+  padding: 10rem 3rem;
   position: relative;
   background-size: cover;
   background-position: top;
@@ -294,7 +300,7 @@ body {
   overflow: hidden;
   border-left: 1px solid #3c3c3c;
   border-right: 1px solid #3c3c3c;
-  background-image: linear-gradient(170deg, transparent 0%, transparent 70%, #f7f7f7 100%), linear-gradient(180deg, transparent 0%, transparent 90%, #f7f7f7 100%), url(../img/32clay.jpg); }
+  background-image: linear-gradient(165deg, transparent 0%, transparent 65%, #f7f7f7 100%), linear-gradient(180deg, transparent 0%, transparent 85%, #f7f7f7 100%), url(../img/32clay.jpg); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -325,6 +331,10 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     animation: moveInUp .5s ease-out .9s;
     animation-fill-mode: backwards; }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        padding: 1.8em;
+        max-width: 95%; } }
 
 .row {
   max-width: 114rem;
@@ -339,6 +349,9 @@ body {
       margin-right: 6rem; }
   .row .col-1-of-1 {
     max-width: 75%; }
+    @media only screen and (max-width: 37.5em) {
+      .row .col-1-of-1 {
+        max-width: 88%; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -490,7 +503,11 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 5rem 0 30rem 0; }
+  padding: 5rem 0 30rem 0;
+  border-radius: 0 0 4px 4px;
+  border-left: 1px solid #3c3c3c;
+  border-right: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c; }
 
 .profile {
   background-color: #fff;
@@ -507,21 +524,30 @@ body {
       padding: 10rem 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .profile {
-      padding: 10rem 4rem; } }
+      padding: 7rem 1.5rem 3rem 3rem; } }
   .profile__section {
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
     .profile__section .paragraph {
       font-weight: 300;
-      font-size: 2rem; }
-      .profile__section .paragraph--medium {
-        font-size: 1.8rem; }
+      font-size: 2rem;
+      margin-left: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .profile__section .paragraph {
+          margin-left: 1.3rem; } }
       .profile__section .paragraph__list {
-        font-size: 1.7em;
+        font-size: 1.8em;
         font-weight: 300;
         margin-top: -1rem;
-        padding-left: 10rem; }
+        padding-left: 8rem; }
+        @media only screen and (max-width: 37.5em) {
+          .profile__section .paragraph__list {
+            font-size: 1.7rem;
+            padding-left: 4rem; } }
         .profile__section .paragraph__list--item {
           padding-bottom: 1rem; }
+          @media only screen and (max-width: 37.5em) {
+            .profile__section .paragraph__list--item {
+              padding-bottom: .5rem; } }
 
 .principles {
   background-color: #fff;
@@ -530,3 +556,17 @@ body {
   border-right: 1px solid #3c3c3c;
   border-left: 1px solid #3c3c3c;
   border-bottom: 1px solid #3c3c3c; }
+  @media only screen and (max-width: 75em) {
+    .principles {
+      padding: 10rem 9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .principles {
+      padding: 10rem 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .principles {
+      padding: 7rem .5rem 3rem 3rem; }
+      .principles .heading-secondary {
+        font-size: 3.0rem;
+        letter-spacing: 1.9rem; } }
+  .principles__section {
+    margin-bottom: 6rem; }

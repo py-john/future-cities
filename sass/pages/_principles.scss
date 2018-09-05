@@ -6,6 +6,27 @@
     border-left: 1px solid #3c3c3c;
     border-bottom: 1px solid #3c3c3c;
 
+    @include respond(tab-land) {
+        padding: 10rem 9rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 7rem;
+    }
+
+    @include respond(phone) {
+        padding: 7rem .5rem 3rem 3rem;
+        .heading-secondary {
+
+            font-size: 3.0rem;
+            letter-spacing: 1.9rem;
+        }
+    }
+
     &__section  {
+        margin-bottom: 6rem;
+
+        @include respond(phone) {
+        }
     }
 }
