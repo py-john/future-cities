@@ -1,5 +1,6 @@
 .header {
     height: 100vh;
+    padding: 0 3rem;
     position: relative;
     background-size: cover;
     background-position: top;
@@ -45,11 +46,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center; 
+        text-align: center;
+
+        @include respond(phone) {
+            top: 50%;
+        }
     }
 
     &__text-box {
         padding: 3rem;
+        margin: 0 auto;
         background-color: $color-primary;
         color: $color-grey-light-1;
         opacity: .85;
@@ -57,6 +63,6 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .5);
         animation: moveInUp .5s ease-out .9s;
         animation-fill-mode: backwards;
-
     }
+
 }

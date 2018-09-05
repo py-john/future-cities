@@ -3,11 +3,16 @@ body {
     font-weight: 400;
     line-height: 1.7;
     padding: $body-padding;
+
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+    margin-bottom: 8rem;
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -19,12 +24,24 @@ body {
     text-shadow: -3px 4px 3px  rgba(0, 0, 0, .5),
                  3px 4px 3px rgba(0, 0, 0, .2),
                  1px 10px 22px rgba(0, 0, 0, .1);
+
+    @include respond(phone) {
+        margin-bottom: 15rem;
+    }
+
     &--main {
         display: block;
         letter-spacing: 3.5rem;
         text-indent: 3.5rem;
         text-align: center;
         animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 5rem;
+            letter-spacing: 3rem;
+            text-indent: 3rem;
+            font-weight: 400;
+        }
     }
 
     &--sub {
@@ -32,16 +49,25 @@ body {
         letter-spacing: 3.2rem;
         text-indent: 3.2rem;
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 5rem;
+            letter-spacing: 3rem;
+            text-indent: 3rem;
+            font-weight: 400;
+        }
+
     }
 }
 
 .heading-secondary {
     color: $color-primary;
     text-transform: uppercase;
+    margin-bottom: 8rem;
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 300;
     opacity: .7;
     text-shadow: -1px 3px 3px rgba(0,0,0,0.5),
@@ -53,6 +79,17 @@ body {
     text-indent: 3.2rem;
     animation: pageHeader .7s ease-out;
 
+    @include respond(tab-port) {
+        margin-bottom: 6rem;
+    }
+
+    @include respond(phone) {
+        font-size: 3.3rem;
+        letter-spacing: 2.1rem;
+        text-indent: 2.1rem;
+        margin-bottom: 4rem;
+    }
+
 }
 
 .heading-tertiary {
@@ -62,6 +99,10 @@ body {
     color: $color-primary-light;
     letter-spacing: .2rem;
     text-shadow: .2rem .4rem 1rem rgba($color-black, .2);
+
+    @include respond(phone) {
+        font-size: 2.3rem;
+    }
 }
 
 .heading-quaternary {
@@ -78,6 +119,12 @@ body {
     font-weight: 500;
     letter-spacing: .15rem;
     color: $color-primary-light;
+}
+
+.heading-senary {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-grey-light-2;
 }
 
 .paragraph {
