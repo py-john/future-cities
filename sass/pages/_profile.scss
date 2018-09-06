@@ -31,7 +31,7 @@
             }
 
             &__list {
-                font-size: 1.8em;
+                font-size: 1.8rem;
                 font-weight: 300;
                 margin-top: -1rem;
                 padding-left: 8rem;
@@ -39,6 +39,13 @@
                 @include respond(phone) {
                     font-size: 1.7rem;
                     padding-left: 4rem;
+                }
+
+                ul {
+                    font-size: 1.7rem;
+                    margin-top: 1rem;
+                    padding-left: 3rem;
+                    list-style: square;
                 }
 
                 &--item {

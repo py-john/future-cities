@@ -1,0 +1,20 @@
+.contact {
+    background-color: $color-white;
+    padding: 10rem;
+    border-radius: 5px;
+    border-right: 1px solid #3c3c3c;
+    border-left: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+
+    @include respond(tab-land) {
+        padding: 10rem 9rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 7rem;
+    }
+
+    @include respond(phone) {
+        padding: 7rem 1.5rem 3rem 3rem;
+    }
+}

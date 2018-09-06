@@ -65,8 +65,8 @@
         animation-fill-mode: backwards;
 
         @include respond(phone) {
-            padding: 1.8em;
-            max-width: 95%;
+            padding: 1.4em;
+            max-width: 93%;
         }
     }
 
