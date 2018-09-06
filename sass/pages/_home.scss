@@ -1,10 +1,93 @@
-.section-about {
+.header {
+    height: 100vh;
+    padding: 10rem 3rem;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    border-left: 1px solid #3c3c3c;
+    border-right: 1px solid #3c3c3c;
+    background-image:
+        linear-gradient(
+            165deg,
+            transparent 0%,
+            transparent 65%,
+            $color-grey-light-1 100%
+        ),
+        linear-gradient(
+            180deg,
+            transparent 0%,
+            transparent 85%,
+            $color-grey-light-1 100%
+
+        ),
+        url(../img/32clay.jpg);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: blur(1px) brightness(90%);
+            opacity: .8;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include respond(phone) {
+            top: 50%;
+        }
+    }
+
+    &__text-box {
+        padding: 3rem;
+        margin: 0 auto;
+        background-color: $color-primary;
+        color: $color-grey-light-1;
+        opacity: .85;
+        border-radius: 6px;
+        box-shadow: 0 1rem 3rem rgba($color-black, .5);
+        animation: moveInUp .5s ease-out .9s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            padding: 1.8em;
+            max-width: 93%;
+        }
+
+        @include respond(phone) {
+            padding: 1.4em;
+            max-width: 93%;
+        }
+    }
+
+}
+
+.section-projects {
     background-color: $color-grey-light-1;
-    padding: 5rem 0 30rem 0;
+    padding: 1rem 0 30rem 0;
     border-radius: 0 0 4px 4px;
     border-left: 1px solid #3c3c3c;
     border-right: 1px solid #3c3c3c;
     border-bottom: 1px solid #3c3c3c;
+
+    h2 {
+        padding-top: 0;
+    }
 }
 
 

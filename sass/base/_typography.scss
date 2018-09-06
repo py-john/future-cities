@@ -12,7 +12,7 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-    margin: 5rem 0;
+    margin: 8rem 0;
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -25,8 +25,15 @@ body {
                  3px 4px 3px rgba(0, 0, 0, .2),
                  1px 10px 22px rgba(0, 0, 0, .1);
 
+    @include respond(tab-port) {
+        margin: 4rem 0 7rem 0;
+        font-size: 6rem;
+    }
+
     @include respond(phone) {
-        margin-bottom: 7rem;
+        margin: 3rem 0 7rem 0;
+        font-size: 5rem;
+        font-weight: 400;
     }
 
     &--main {
@@ -36,11 +43,14 @@ body {
         text-align: center;
         animation: moveInLeft 1s ease-out;
 
+        @include respond(tab-port) {
+            letter-spacing: 3.2rem;
+            text-indent: 3.2rem;
+        }
+
         @include respond(phone) {
-            font-size: 5rem;
             letter-spacing: 3rem;
             text-indent: 3rem;
-            font-weight: 400;
         }
     }
 
@@ -50,11 +60,14 @@ body {
         text-indent: 3.2rem;
         animation: moveInRight 1s ease-out;
 
+        @include respond(tab-port) {
+            letter-spacing: 3.2rem;
+            text-indent: 3.2rem;
+        }
+
         @include respond(phone) {
-            font-size: 5rem;
             letter-spacing: 3rem;
             text-indent: 3rem;
-            font-weight: 400;
         }
 
     }
@@ -67,7 +80,7 @@ body {
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: 300;
     opacity: .7;
     text-shadow: -1px 3px 3px rgba(0,0,0,0.5),
@@ -75,16 +88,21 @@ body {
                  2px 8px 13px rgba(0,0,0,0.2);
 
     display: block;
-    letter-spacing: 3.2rem;
+    letter-spacing: 3rem;
+    text-indent: 3rem;
     animation: pageHeader .8s ease-out;
 
     @include respond(tab-port) {
+        font-size: 4.2rem;
+        letter-spacing: 2rem;
+        text-indent: 2rem;
         margin-bottom: 6rem;
     }
 
     @include respond(phone) {
-        font-size: 3.5rem;
-        letter-spacing: 2.1rem;
+        font-size: 3.3rem;
+        letter-spacing: 1.4rem;
+        text-indent: 1.4rem;
         margin-bottom: 4rem;
     }
 
@@ -99,7 +117,7 @@ body {
     text-shadow: .2rem .4rem 1rem rgba($color-black, .25);
 
     @include respond(phone) {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 }
 
@@ -140,4 +158,20 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.section-hr {
+    border: 0;
+    height: 1px;
+    width: 92%;
+    margin: 0 auto 7rem auto;
+    background-image: linear-gradient(
+            to right, rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0));
+
+    @include respond(tab-port) {
+        margin: -1rem auto 5rem auto;
+    }
+
 }
